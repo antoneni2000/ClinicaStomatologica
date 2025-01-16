@@ -1,0 +1,49 @@
+﻿@page
+@model Clinica.Pages.Prescriptions.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Prescription</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Prescription.Patient)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Prescription.Patient.Allergies)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Prescription.Treatment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Prescription.Treatment.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Prescription.TreatmentCost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Prescription.TreatmentCost)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Prescription.Medicine)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Prescription.Medicine)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Prescription.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Prescription.Quantity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Prescription.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
