@@ -1,5 +1,6 @@
 This project aims to design and develop an integrated information system of managing operations in a dental clinic. The system is developed as part of the Programming and Development Environments course at FSEGA.
 It is focused on the web application only, usng ASP.NET Core Technology.
+
 **Key Functionalities**
 - User authentication and role-based access control (admin, doctor, patient)
 - Patients can create, view, update or cancel appointments
